@@ -1,0 +1,63 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 75px;
+}
+
+header
+{
+    display: flex;
+    background-color: gray;
+    height: 10vh;
+    width: 100vw;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: end;
+}
+
+.menu
+{
+    width: 20vw;
+    display: flex;
+    text-align: center;
+}
+
+.menu a
+{
+    user-select: none;
+    display: block;
+    border: 2px solid black;
+    padding: 5px 30px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container
+{
+    display: flex;
+    height: 2000px;
+    width: 70%;
+    background-color: aquamarine;
+    flex-grow: initial;
+    flex-wrap: wrap;
+}
+
+.box
+{
+    background-color: brown;
+    height: 200px;
+    flex-basis: 25%;
+    border-radius: 10px;
+}
