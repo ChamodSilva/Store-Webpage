@@ -1,23 +1,13 @@
+//Importing constants
+import {CATEGORIES, BRANDS} from "./constants.js";
+
 //Reference to HTML headers
 const body = document.body;
 const main = body.querySelector('main');
 
-//Category Constants
-const KEYBOARD = "keyboard";
-const MOUSE = "mouse";
+console.log(CATEGORIES.LOGITECH);
 
-//Brand Constants
-const LOGITECH = "Logitech";
-const RAZER = "Razer";
-const HYPERX = "Hyper X";
-const THERMALTAKE = "Thermaltake";
-const KEYCHRON = "Keychron";
-const CHERRY = "Cherry";
-const GIGABYTE = "Gigabyte";
-const DUCKY = "Ducky";
-
-
-//Product Contructor
+//Product Constructor
 function Product(id, name, brand, price, category)
 {
     this.id = id;
@@ -96,17 +86,17 @@ const products =
 ];
 
 //Creating arrays based on category of product.
-const categoryKeyboard = products.filter((item) => item.category === KEYBOARD);
+const categoryKeyboard = products.filter((item) => item.category === CATEGORIES.KEYBOARD);
 
 //Creating arrays based on brand of product.
-const brandLogitech = products.filter((item) => item.brand === LOGITECH);
-const brandRazer = products.filter((item) => item.brand === RAZER);
-const brandHyperX = products.filter((item) => item.brand === HYPERX);
-const brandThermaltake = products.filter((item) => item.brand === THERMALTAKE);
-const brandKeychron = products.filter((item) => item.brand === KEYCHRON);
-const brandCherry = products.filter((item) => item.brand === CHERRY);
-const brandGigabyte = products.filter((item) => item.brand === GIGABYTE);
-const brandDucky = products.filter((item) => item.brand === DUCKY);
+const brandLogitech = products.filter((item) => item.brand === BRANDS.LOGITECH);
+const brandRazer = products.filter((item) => item.brand === BRANDS.RAZER);
+const brandHyperX = products.filter((item) => item.brand === BRANDS.HYPERX);
+const brandThermaltake = products.filter((item) => item.brand === BRANDS.THERMALTAKE);
+const brandKeychron = products.filter((item) => item.brand === BRANDS.KEYCHRON);
+const brandCherry = products.filter((item) => item.brand === BRANDS.CHERRY);
+const brandGigabyte = products.filter((item) => item.brand === BRANDS.GIGABYTE);
+const brandDucky = products.filter((item) => item.brand === BRANDS.DUCKY);
 
 
 //Configuration to build Navigation bar and store page
@@ -125,6 +115,10 @@ const layoutConfig =
         {
             title: "Contact Us",
             href: "contact-us"
+        },
+        {
+            title: "Data Entry",
+            href: "/data_entry/index.html"
         },        
     ],
 };

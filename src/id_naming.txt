@@ -1,0 +1,11 @@
+//Seperator will be used inbetween keywords.
+Seperator: '-'
+
+//Navigation Panel:
+== Starts with the keyword "nav" followed by name of type of nav option. ==
+nav-menuoption
+
+//Buttons:
+== Starts with the keyword "btn" followed by name of type of button. ==
+btn-shoppingcart
+btn-itembuy

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta data for webpage -->
+        <title>My Store</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Chamod Silva" />
+        <meta name="description" content="Data entry page for additions to the store." />
+        <meta name="keywords" content="HTML, CSS, JS, Store Data Entry" />
+        <meta name="viewport" content="width=device-widthm initial-scale=1.0" />
+
+        <!--Referencing style sheet within the folder-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class ="menu" id="main-menu"></nav>
+            <button type="button" class="btn-basket" id="basket"></button>
+        </header>
+
+        <main>
+            <form id="addProductForm">
+                <label for="productBrand">Brand:</label>
+                <input type="select" placeholder="Select a brand" name="productBrand" id="productBrand" required>
+
+                <label for="productModel">Model:</label>
+                <input type="text" placeholder="Model name" name="productModel" id="productModel" required>
+
+                <label for="productPrice">Price:</label>
+                <input type="number" placeholder="Price in $" step="0.01" min="0.00" name="productPrice" id="productPrice" required>
+
+                <label for="productUnits">Units:</label>
+                <input type="number" placeholder="Number of units" min="1" name="productUnits" id="productUnits" required>
+
+                <label for="productCategory">Category:</label>
+                <input type="text" placeholder="Select a category" name="productCategory" id="productCategory" required>
+                <br>
+                <button type="button" onclick="addToProducts()">Add Entry</button> 
+            </form>
+            
+            <div id="output"></div>
+        </main>
+
+        <button type="button"></button>
+        <!-- Refrencing script file within the folder -->
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
