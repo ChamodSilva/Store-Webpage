@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta data for webpage -->
+        <title>My Store</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Chamod Silva" />
+        <meta name="description" content="Data entry page for additions to the store." />
+        <meta name="keywords" content="HTML, CSS, JS, Store Data Entry" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+
+        <!--Referencing style sheet within the folder-->
+        <link rel="stylesheet" href="./data-entry.css">
+    </head>
+
+    <body>
+        <header>
+            <section class="top">
+                <a>Logo</a>
+                <input type="text" name="search-bar" id="search-bar">
+                <button type="button" class="btn-basket" id="basket"></button>
+            </section>
+            <section class="bottom">
+                <nav>
+                    <ul>
+                        <li><a href="/src/index.html">Store</a></li>
+                        <li><a href="./data-entry.html">Data Entry</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <form id="addProductForm">
+                <label for="brand">Brand:</label>
+                <input type="select" placeholder="Select a brand" name="brand" id="brand" required>
+
+                <label for="model">Model:</label>
+                <input type="text" placeholder="Model name" name="model" id="model" required>
+
+                <label for="category">Category:</label>
+                <input type="text" placeholder="Select a category" name="category" id="category" required>
+
+                <label for="price">Price:</label>
+                <input type="number" placeholder="Price in $" step="0.01" min="0.00" name="price" id="price" required>
+
+                <label for="quantity">Units:</label>
+                <input type="number" placeholder="Number of units" min="0" name="quantity" id="quantity" required>
+                <br>
+                <button type="button" onclick="addToJSON()">Add Entry</button> 
+            </form>
+
+            <div id="output"></div>
+        </main>
+        
+        <!-- Refrencing script file within the folder -->
+        <script src="./data-entry.js"></script>
+    </body>
+</html>

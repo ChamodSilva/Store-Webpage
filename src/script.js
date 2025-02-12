@@ -17,6 +17,7 @@ function Product(id, name, brand, price, category)
     this.category = category;
 }
 
+
 const products =
 [
     {
@@ -106,7 +107,7 @@ const layoutConfig =
     [
         {
             title: "Store",
-            href: "index.html"
+            href: "./indexv2.html"
         },
         {
             title: "About Us",
@@ -118,7 +119,7 @@ const layoutConfig =
         },
         {
             title: "Data Entry",
-            href: "/data_entry/index.html"
+            href: "./data-entry.html"
         },        
     ],
 };
